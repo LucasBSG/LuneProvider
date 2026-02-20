@@ -1,0 +1,186 @@
+# =============================================================================
+# LuneProvisioner — .gitignore
+# Stack: .NET 10 / ASP.NET Core + React 19 (Vite + TypeScript) + Terraform + K8s
+# =============================================================================
+
+# =============================================================================
+# .NET / ASP.NET Core
+# =============================================================================
+## Build output
+bin/
+obj/
+out/
+
+## Publicações
+publish/
+*.pubxml
+*.pubxml.user
+
+## Pacotes NuGet locais
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+docs/
+.vs/
+
+## Rider / JetBrains
+.idea/
+*.DotSettings.user
+
+## Logs e arquivos de diagnóstico
+*.log
+*.tlog
+*.tmp
+crash-*.txt
+
+## Certificados de desenvolvimento HTTPS
+*.pfx
+*.pem
+*.key
+*.crt
+*.cer
+
+## Entity Framework / SQLite
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+Migrations/
+
+## Configurações com segredos
+appsettings.*.json
+!appsettings.json
+!appsettings.Development.json
+secrets.json
+**/secrets/**
+
+## Coverage e testes
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+*.trx
+
+# =============================================================================
+# Node.js / React / Vite / TypeScript
+# =============================================================================
+node_modules/
+dist/
+dist-ssr/
+.vite/
+
+## Cache
+.cache/
+.parcel-cache/
+*.tsbuildinfo
+
+## Envs
+.env
+.env.*
+!.env.example
+
+## Logs npm/yarn/pnpm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+## Lock files alternativos (manter apenas um)
+# yarn.lock
+# package-lock.json
+
+# =============================================================================
+# Terraform
+# =============================================================================
+## Diretórios de estado e planos locais
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+!*.tfvars.example
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+## Providers baixados
+.terraform.d/
+
+# =============================================================================
+# Kubernetes / Helm
+# =============================================================================
+## Kubeconfigs nunca devem ser versionados
+kubeconfig
+kubeconfig.*
+*.kubeconfig
+**/kubeconfig
+
+## Charts gerados / dependências de Helm
+charts/
+Chart.lock
+
+## Manifests renderizados localmente
+rendered/
+
+# =============================================================================
+# Docker
+# =============================================================================
+## Arquivos de ambiente de containers
+docker-compose.override.yml
+.dockerignore.local
+
+# =============================================================================
+# Secrets / Credenciais Cloud
+# =============================================================================
+.aws/
+.azure/
+.gcp/
+credentials
+credentials.json
+*credentials*
+*secret*
+*token*
+*.pem
+*.key
+
+# =============================================================================
+# Sistema Operacional
+# =============================================================================
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## Linux
+*~
+
+# =============================================================================
+# IDEs e Editores
+# =============================================================================
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+.idea/
+*.swp
+*.swo

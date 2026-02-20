@@ -1,0 +1,33 @@
+:root {
+  --font-sans: 'Space Grotesk', 'Manrope', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'JetBrains Mono', 'Consolas', monospace;
+  --surface-primary: rgba(12, 22, 29, 0.78);
+  --surface-secondary: rgba(9, 16, 24, 0.78);
+  --surface-border: rgba(167, 222, 214, 0.2);
+  --terminal-bg: rgba(5, 12, 17, 0.96);
+  --field-bg: rgba(8, 17, 24, 0.85);
+  --text-strong: #e8fcf9;
+  --text-muted: #95bab3;
+  --accent: #89e8cd;
+  --focus-ring: rgba(137, 232, 205, 0.22);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  color: var(--text-strong);
+  background:
+    radial-gradient(1100px circle at 14% -10%, rgba(89, 193, 223, 0.24), transparent 52%),
+    radial-gradient(1200px circle at 90% 15%, rgba(112, 224, 166, 0.16), transparent 48%),
+    linear-gradient(160deg, #041017 0%, #07111c 35%, #041117 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

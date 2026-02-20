@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/LuneProvisioner.Api/LuneProvisioner.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/LuneProvisioner.Api.IntegrationTests/LuneProvisioner.Api.IntegrationTests.csproj" />
+  </Folder>
+</Solution>
